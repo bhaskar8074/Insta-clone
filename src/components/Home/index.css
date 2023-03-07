@@ -1,0 +1,134 @@
+.home-content-container {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.ul-stories {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.stories-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  height: 20vh;
+}
+
+.story-li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-container {
+    margin-left: 30px;
+  }
+}
+
+.story {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-right: 10px;
+}
+
+.story-img-container {
+  border-radius: 50%;
+  border: 1px solid #d62976;
+  padding: 2px;
+  align-self: center;
+}
+
+.link-li-item {
+  text-decoration: none;
+  color: #87807f;
+}
+.story-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .story-img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .home-content-container {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+.name {
+  font-size: 10px;
+  text-align: center;
+}
+
+.link-item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.posts-list {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.stories-loader-container {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts-loader-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-search-results-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.no-search-results-img {
+  height: 400px;
+  width: 500px;
+}
+
+.home-failure-img {
+  height: 45px;
+  width: 45px;
+}
+
+.search-results-heading {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #2d2d2d;
+}
+
+@media screen and (max-width: 767px) {
+  .no-search-results-img {
+    height: 200px;
+    width: 250px;
+  }
+}

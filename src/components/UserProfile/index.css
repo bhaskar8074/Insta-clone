@@ -1,0 +1,15 @@
+.loader-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.posts-imgs-container {
+  margin-left: 0px;
+  display: flex;
+}
+
+.profile-post-li-item {
+  list-style-type: none;
+}

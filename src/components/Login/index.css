@@ -1,0 +1,155 @@
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.instagram-desktop-login-img {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .instagram-desktop-login-img {
+    display: inline;
+    width: 572px;
+    height: 370px;
+  }
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 380px;
+  height: 572px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 520px;
+  background: linear-gradient(
+    transparent,
+    transparent,
+    #f5020b,
+    #f5020b,
+    #0ee8e8
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 520px;
+  background: linear-gradient(
+    transparent,
+    transparent,
+    #d0de07,
+    #12a692,
+    #0946ed
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box form {
+  position: absolute;
+  inset: 4px;
+  background: #222;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram-clone-logo {
+  width: 80px;
+  height: 40px;
+}
+
+.box form .input-box {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.box form .input-box input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 1em;
+  z-index: 10;
+}
+
+.box form .input-box label {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.box form .input-box input:valid ~ label,
+.box form .input-box input:focus ~ label {
+  color: #ffffff;
+  font-size: 0.75em;
+  transform: translateY(-20px);
+}
+
+.box form .input-box i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box form button[type='submit'] {
+  margin-top: 35px;
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background-color: #ffffff;
+}
